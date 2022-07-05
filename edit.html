@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/notes-app/styles/styles.css">
+    </head>
+        <body>
+            <div class="header">
+                <div class="container">
+                    <h1 class="header__title">Brain Dump.</h1>
+                    <h2 class="header__subtitle">Tips.</h2>
+                    <br>
+                    <h3 class="header__subtitle">1. Write the title then add a tag.</h3>
+                    <h3 class="header__subtitle">Eg. Youtube show with spicy stuff - magic - youtube</h3>
+                </div>
+                </div>
+            <div class="actions">
+            <div class="actions__container actions__container--spaced">
+            <a href="index.html"> Home </a>
+            <br>
+             <span id="updated"></span>
+            </div>
+            </div>
+        <br>
+        <div class="container">
+        <input class='title-input' id="newNoteEdit" placeholder="enter title here">
+        <br>
+        <textarea class='body-input' id="descrip" placeholder="Detailed account"></textarea> 
+        <div class="buttons__container button--spaced">
+        <button class='button button--secondary' id="deleteNote"> DELETE NOTE </button>
+        <button class='button' id="done"> DONE </button>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js"></script>
+        <script src="/notes-app/scripts/notes-functions.js" > </script>
+        <script src="/notes-app/scripts/notes-edit.js"> </script>
+        </body>
+</html>

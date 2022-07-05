@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Brain Dump.</title>
+        <link href="/notes-app/images/brain.png" rel="icon">
+        <link href="/notes-app/styles/styles.css" rel="stylesheet" >
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">Brain Dump</h1>
+                <h2 class="header__subtitle">Everytime you have an idea, dump it here ;) (OOSOOM)</h2>
+            </div>
+            </div>
+        <div class="actions">
+         <div class="container">
+         <input class="input" id="search-text" type="text" placeholder="Filter notes">
+         <select class="dropdown" id="filter-by">
+            <option value="byEdited">Sort by last edited</option>
+            <option value="byCreated">Sort by recently created</option>
+            <option value="alphabetical">Sort alphabetically</option>
+         </select>
+         </div>
+        </div>
+        <div class="container">
+        <div id="notes" class="list-item"></div>
+        <button class="button" id="create-note">Create Note</button>  
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+        <script src="/notes-app/scripts/notes-functions.js"></script>
+        <script src="/notes-app/scripts/notes-app.js"></script>
+    </body>
+</html>
